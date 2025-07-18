@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Logo..</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search tasks here...">
+            <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <nav>
+            <a href="#"><i class="fa-solid fa-message"></i></a>
+            <a href="#">Mode</a>
+            <a href="#" id="log">Login</a>
+        </nav>
+    </header>
+    
+<!-- login part here... -->
+
+<div class="login">
+     <button id="closeLogin"> X </button>
+    <form action="#">
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="userName" required>
+        <input type="email" placeholder="Enter email" required>
+        <input type="password" placeholder="Enter password" required>
+        <input type="submit" id="submit">
+    </form>
+</div>
+
+
+<!-- main context start from here... -->
+
+
+    <div class="main-container">
+        <div class="nav-part">
+            <a href="#">Home</a>
+            <a href="#">Theme</a>
+            <a href="#">Setting</a>
+            <a href="#">Past-History</a>
+            <a href="#">Exit</a>
+            <div class="copyright">
+                <p>© 2025 Nayeem Islam. All rights reserved.</p>
+            </div>
+        </div>
+
+
+        <div class="task-part">
+            <div class="task">
+                <div class="task-list">
+                <p>Task List</p>
+                </div>
+                <div class="add-task">
+                    <a href="#"> + Add Task</a>
+                </div>
+            </div>
+
+            <div class="take-input">
+                <button id="close"> X </button>
+                <form action="#">
+                    <input class="task-enter" type="text" placeholder="Enter the task..." id="taskInput">
+                    <div class="prorioty">
+                        <p>Choose Priority</p>
+                        <select id="priorityInput">
+                            <option value="Higher">Higher</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Lower">Lower</option>
+                        </select>
+                    </div>
+
+                    <input type="submit" id="submit1">
+               </form>
+            </div>
+
+            <ul id="taskList">
+
+            </ul>
+        </div>
+
+
+        <div class="date-img-part">
+           <div class="calendar-container">
+               <input id="calendar" type="text" placeholder="Select Date">
+           </div>
+           <div class="line"></div>
+
+           <div class="img-q">
+            <div class="img-con">
+                <img src="d.jpeg">
+            </div>
+            <p>"Don't stop when you're tired. Stop when you're done." </p>
+           </div>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="app.js"></script>
+</body>
+</html>
