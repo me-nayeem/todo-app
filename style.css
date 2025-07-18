@@ -387,6 +387,20 @@ nav a{
   white-space: normal;   
 }
 
+#taskList .task-item input {
+    position: relative;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+#taskList .task-item .com {
+    font-size: 1.6rem;
+    position: relative;
+    left: 12rem;
+}
+
+
 #taskList .task-item span button {
     font-size: 1.8rem;
     position: sticky;
