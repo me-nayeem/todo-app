@@ -67,6 +67,7 @@ function renderTasks() {
       <span>
         <strong>${t.text}</strong> — <em>${t.priority}</em>
       </span>
+      <span class = "com" >Complete?</span><input type="radio">
       <span>
         <button onclick="startEdit(${t.id})">
           <i class="fa-solid fa-pen-to-square"></i>
